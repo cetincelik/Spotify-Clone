@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./styles/style.css" />
+</head>
+<body>
+    <aside>
+        <figure>
+            <img src="./images/spotify-logo.png" alt="" class="text-image"  />
+            <img src="./images/no-text.png" alt="" class="no-text" />
+            <nav>
+                <a href=""><i class="bi bi-house-fill"></i> <span>Anasayfa</span></a>
+                <a href=""><i class="bi bi-search"></i> <span>Arama</span></a>
+                <a href=""><i class="bi bi-collection"></i> <span>Kütüphane</span></a>
+                <a href=""><i class="bi bi-music-note-list"></i> <span>Çalma Listeleri</span></a>
+                <a href=""><i class="bi bi-heart"></i> <span>Beğenilen Şarkılar</span></a>
+            </nav>
+        </figure>
+    </aside>
+    <main>
+        <header>
+            <form>
+                <div class="search">
+                    <div class="search-input">
+                        <input type="text" placeholder="Müzik arayın" />
+                        <i class="bi bi-search"></i>
+                    </div>
+                </div>
+                <i class="bi bi-list" id="menu"></i>
+
+                <ul>
+                    <li>Premium</li>
+                    <li>Destek</li>
+                    <li>Oturum Aç</li>
+                    <li>Kayıt Ol</li>
+                </ul>
+            </form>
+        </header>
+
+        <div class="songs">
+            <h2>Popüler Müzikler</h2>
+            <div class="list">
+                <!-- <div class="card">
+                    <figure>
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ca/7b/3d/ca7b3d6e-8f8e-3886-013e-c29ac048f340/dj.xcnarrhw.jpg/400x400cc.jpg"
+                         alt=""
+                         />
+                         <div class="play">
+                            <i class="bi bi-play-fill"></i>
+                         </div>
+                         <h4>title</h4>
+                         <h4>title</h4>
+                    </figure>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img src="https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ca/7b/3d/ca7b3d6e-8f8e-3886-013e-c29ac048f340/dj.xcnarrhw.jpg/400x400cc.jpg"
+                         alt=""
+                         />
+                         <div class="play">
+                            <i class="bi bi-play-fill"></i>
+                         </div>
+                         <h4>title</h4>
+                         <h4>title</h4>
+                    </figure>
+                </div> -->
+            </div>
+        </div>
+    </main>
+
+    <div class="playing">
+        <div class="info">
+            <!-- <img 
+             src="https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ca/7b/3d/ca7b3d6e-8f8e-3886-013e-c29ac048f340/dj.xcnarrhw.jpg/400x400cc.jpg"
+             alt=""
+            />
+            <div>
+                <p>Şu an oynatılıyor...</p>
+                <h3>title</h3>
+            </div> -->
+        </div>
+        <audio controls>
+            <source />
+        </audio>
+    </div> 
+    <script src="main.js" type="module"></script>
+</body>
+</html>

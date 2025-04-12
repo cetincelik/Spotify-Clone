@@ -1,0 +1,181 @@
+main {
+    background-color: $card-background;
+    width: 100%;
+    margin: 10px;
+    border-radius: $radius;
+
+    header {
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 30px;
+
+            @include ipad {
+                padding: 12px 10px;
+            }
+
+            background: $color;
+            margin: 10px;
+            border-radius: $radius;
+            gap: 40px;
+
+            .search-input {
+                position: relative;
+
+                input {
+                    background: black;
+                    border: none;
+                    outline: none;
+                    padding: 15px 20px;
+                    border-radius: $radius;
+                    width: 500px;
+                    color: #fff;
+                    max-width: 500px;
+
+                    @include laptop {
+                        width: 250px;
+                    }
+
+                    @include ipad-pro {
+                        width: 300px;
+                    }
+
+                    @include ipad {
+                        width: 220px;
+                    }
+
+                    &:focus {
+                        box-shadow: 0 0 10px rgb(56, 56, 56);
+                    }
+
+                }
+
+                i {
+                    position: absolute;
+                    right: 15px;
+                    top: 10px;
+                }
+            }
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                gap: 15px;
+
+                @include ipad {
+                    display: none;
+                }
+
+                :nth-child(4) {
+                    background-color: $spotify-color;
+                    border-radius: $radius;
+                    color: black;
+                    transition: all 0.4s;
+
+                    &:hover {
+                        background: #159845;
+                        scale: 0.98;
+                    }
+                }
+
+                li {
+                    white-space: nowrap;
+                    padding: 8px;
+                    font-size: 14px;
+                    cursor: pointer;
+                }
+            }
+
+            #menu {
+                display: none;
+                font-size: 23px;
+                cursor: pointer;
+                margin-right: 6px;
+
+                @include ipad {
+                    display: flex;
+                }
+            }
+        }
+    }
+
+    .songs {
+        h2 {
+            padding: 10px;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 10px;
+
+            .card {
+                background: #121212;
+                width: 200px;
+                padding: 20px;
+                border-radius: $radius;
+                margin: 10px;
+                opacity: 0.7;
+                cursor: pointer;
+                transition: all 0.3s;
+
+                &:hover {
+                    opacity: 1;
+                }
+
+                h4 {
+                    margin-bottom: 6px;
+                }
+
+                &:hover .play {
+                    opacity: 1;
+                }
+
+                h4 {
+                    margin-bottom: 6px;
+                }
+
+                &:hover .play {
+                    opacity: 1;
+                    bottom: 80px;
+                }
+
+                figure {
+                    position: relative;
+
+                    img {
+                        width: 100%;
+                        border-radius: $radius;
+                        margin-bottom: 10px;
+                    }
+
+                    .play {
+                        background: $spotify-color;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        display: grid;
+                        place-items: center;
+                        position: absolute;
+                        right: 10px;
+                        bottom: -20px;
+                        opacity: 0;
+                        transition: all 0.4s;
+
+                        &:hover {
+                            scale: 1.2;
+                            background: #159845;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
