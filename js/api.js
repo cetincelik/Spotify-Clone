@@ -1,4 +1,4 @@
-import {renderSearchMusic, renderSong } from "./ui";
+import {renderSearchMusic, renderSong } from "./ui.js";
 
 //* Inputa girilen veriye göre aratacağımız api key
 const options = {

@@ -1,4 +1,4 @@
-import { elements } from "./helpers";
+import { elements } from "./helpers.js";
 
 export const renderSearchMusic = (songs) => {
   elements.list.innerHTML = "";
