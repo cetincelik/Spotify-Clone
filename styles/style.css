@@ -240,7 +240,14 @@ main .songs .list .card figure .play:hover {
   animation: turn 3s infinite linear;
 }
 
-@keyframes turn {}
+@keyframes turn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -253,7 +260,7 @@ body {
   font-family: "Poppins", sans-serif;
   color: rgba(255, 255, 255, 0.78);
   display: flex;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 a {

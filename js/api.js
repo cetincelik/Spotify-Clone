@@ -1,4 +1,4 @@
-import {renderSearchMusic, renderSong } from "./ui.js";
+import {renderSearchMusic, renderSongs } from "./ui.js";
 
 //* Inputa girilen veriye göre aratacağımız api key
 const options = {
@@ -50,7 +50,7 @@ export class API {
             const res = await fetch(url, optionsTop);
             const result = await res.json();
             this.songs = result.tracks;
-            renderSong(this.songs);
+            renderSongs(this.songs);
         } catch (error) {
             console.log(error);
         }

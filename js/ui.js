@@ -34,7 +34,7 @@ export const updateTitle = (message) => {
   elements.title.textContent = message;
 };
 
-export const renderSong = (song) => {
+export const renderSongs = (song) => {
    elements.list.innerHTML = "";
    song.forEach((song) => {
       console.log(song);
